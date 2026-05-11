@@ -10,8 +10,7 @@ veracode_static_scan:
     action:
       - opened
       - synchronize
-    target_branch:
-      - !<tag:yaml.org,2002:js/undefined> ''
+    target_branch: !<tag:yaml.org,2002:js/undefined> ''
   analysis_on_platform: true
   break_build_policy_findings: true
   break_build_invalid_policy: true
