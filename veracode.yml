@@ -32,12 +32,12 @@ veracode_sca_scan:
     branches_to_exclude:
       - branch-1
   pull_request:
-    trigger: false
+    trigger: true
     action:
       - opened
       - synchronize
     target_branch:
-      - default_branch
+      - !<tag:yaml.org,2002:js/undefined> ''
   break_build_on_error: false
   error_message: Veracode static scan faced a problem.
   issues:
